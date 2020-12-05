@@ -1,0 +1,115 @@
+@import url(soshub.css);
+@import url(sos-gradients.css);
+/* iOS Cordova Tweak */
+.device-cordova.device-ios {
+  height: 100vh;
+}
+
+/* Custom color theme properties */
+:root {
+  --f7-theme-color: lightgray;
+  --f7-theme-color-rgb: 0, 87, 255;
+  --f7-theme-color-shade: #0049d6;
+  --f7-theme-color-tint: #2972ff;
+}
+
+/* Your app custom styles here */
+.custom-file-input {
+  color: transparent;
+  opacity: 0!important;
+  position: fixed!important;
+}
+body {
+  color: whitesmoke !important;
+}
+.little-top{
+  position: relative!important;top: 2px!important;
+}
+.img-browser {
+  box-shadow: var(--f7-card-box-shadow)!important;
+}
+.connection-failure-msg {
+  height: fit-content!important;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.w3-display-middle
+{
+  position:absolute!important;
+  top:50%!important;
+  left:50%!important;
+  transform:translate(-50%,-50%)!important;
+  -ms-transform:translate(-50%,-50%)!important;
+}
+.w3-circle{
+  border-radius:50%!important;
+}
+.bi-image {
+  margin-top: 20px!important;
+}
+.custom-file-input::before {
+  content: 'add image'!important;
+  color: black;
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active {
+  outline: 0;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+}
+
+.card-header:after {
+  display: none;
+}
+.last {
+  color: crimson;
+}
+.card-header {
+  margin-left: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue","Helvetica","Arial",sans-serif!important;
+  line-height: 1.8rem!important;
+  letter-spacing: 0.1rem!important;
+}
+.list input[type="text"], input[type="email"], input[type="password"]{
+  text-indent: 1rem;
+  border-radius: 6px;
+}
+.md .item-input:not(.item-input-outline) .item-input-wrap:after, .md .input:not(.input-outline):after {
+  display: none;
+}
+.bg_img_fit {
+  background-position: center!important;
+  background-repeat: no-repeat!important;
+  background-size: cover!important;
+  color: whitesmoke!important;
+}
+/*@media screen and (min-width: 0px) and (max-width: 400px) {
+  .suggested_hub {
+
+  }  
+}
+
+@media screen and (min-width: 401px) and (max-width: 1024px) {
+  .suggested_hub {
+
+  }  
+}*/

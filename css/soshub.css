@@ -1,0 +1,204 @@
+*{
+	margin:0;
+	padding:0;
+}
+.dots
+{
+	width: 3.5em;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 0px !important;
+}
+.dots div
+{
+	width: 0.5em;
+	height: 0.5em;
+	border-radius: 50%;
+	background-color: slategrey;
+	animation: fade 0.8s ease-in-out alternate infinite;
+}
+.dots div:nth-of-type(1)
+{
+	animation-delay: -0.4s;
+}
+.dots div:nth-of-type(2)
+{
+	animation-delay: -0.2s;
+}
+@keyframes fade
+{
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+@media (min-width: 1200px) {
+	.col-sm-8 {
+		max-width: 1140px;
+		margin-left: 300px!important;
+	}
+}
+
+@media (min-width: 1452px) {
+	.selector {
+		max-width: 1360px;
+	}
+	@media (max-width: 767px) {
+		#main-1 {
+			margin-top: 40px!important;
+		}
+	}
+}
+
+/*  SOSHUB fancy styles is set from here    */
+.best-blue-text
+{
+	color: #0057ff!important;
+}
+.best-blue-bg
+{
+	background-color: #0057ff!important;
+}
+.margin-less-right
+{
+	margin-right: 8px !important;
+}
+.margin-less-left
+{
+	margin-left: 8px !important;
+}
+.margin-less-top
+{
+	margin-top: 8px !important;
+}
+.margin-less-bottom
+{
+	margin-bottom: 8px !important;
+}
+.margin-more-top
+{
+	margin-top: 40px !important;
+}
+.margin-more-right
+{
+	margin-right: 40px !important;
+}
+.margin-more-left
+{
+	margin-left: 40px !important;
+}
+.margin-more-bottom
+{
+	margin-bottom: 40px !important;
+}
+.see-through
+{
+	background: rgba(255, 255, 255, 0.8) !important;
+}
+.sos-shadow
+{
+	box-shadow: inset 0 -2px 6px rgba(218,225,230,.2),0 0 0 1px rgba(90,101,112,.05),0 1px 2px   rgba(90,101,112,.22)!important;
+}
+.sos-bg_img {
+	background-image: url("sos_bg.jpg")!important;
+	background-position: center!important; /* Center the image */
+	background-repeat: no-repeat!important; /* Do not repeat the image */
+	background-size: cover!important; /* Resize the background image to cover the entire container */
+	color: whitesmoke!important;
+}
+.sos-bg {
+	background: rgba(0, 23, 66, 1)!important;
+	background: -moz-linear-gradient(45deg, rgba(0, 23, 66, 1) 0%, rgba(0, 29, 87, 1) 0%, rgba(0, 28, 84, 1) 19%, rgba(0, 27, 82, 0.98) 36%, rgba(0, 32, 97, 0.95) 71%, rgba(0, 29, 92, 0.94) 86%, rgba(0, 27, 87, 0.94) 100%) !important;
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0, 23, 66, 1)), color-stop(0%, rgba(0, 29, 87, 1)), color-stop(19%, rgba(0, 28, 84, 1)), color-stop(36%, rgba(0, 27, 82, 0.98)), color-stop(71%, rgba(0, 32, 97, 0.95)), color-stop(86%, rgba(0, 29, 92, 0.94)), color-stop(100%, rgba(0, 27, 87, 0.94))) !important;
+	background: -webkit-linear-gradient(45deg, rgba(0, 23, 66, 1) 0%, rgba(0, 29, 87, 1) 0%, rgba(0, 28, 84, 1) 19%, rgba(0, 27, 82, 0.98) 36%, rgba(0, 32, 97, 0.95) 71%, rgba(0, 29, 92, 0.94) 86%, rgba(0, 27, 87, 0.94) 100%) !important;
+	background: -o-linear-gradient(45deg, rgba(0, 23, 66, 1) 0%, rgba(0, 29, 87, 1) 0%, rgba(0, 28, 84, 1) 19%, rgba(0, 27, 82, 0.98) 36%, rgba(0, 32, 97, 0.95) 71%, rgba(0, 29, 92, 0.94) 86%, rgba(0, 27, 87, 0.94) 100%) !important;
+	background: -ms-linear-gradient(45deg, rgba(0, 23, 66, 1) 0%, rgba(0, 29, 87, 1) 0%, rgba(0, 28, 84, 1) 19%, rgba(0, 27, 82, 0.98) 36%, rgba(0, 32, 97, 0.95) 71%, rgba(0, 29, 92, 0.94) 86%, rgba(0, 27, 87, 0.94) 100%) !important;
+	background: linear-gradient(45deg, rgba(0, 23, 66, 1) 0%, rgba(0, 29, 87, 1) 0%, rgba(0, 28, 84, 1) 19%, rgba(0, 27, 82, 0.98) 36%, rgba(0, 32, 97, 0.95) 71%, rgba(0, 29, 92, 0.94) 86%, rgba(0, 27, 87, 0.94) 100%) !important;
+	color: whitesmoke!important;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#001742', endColorstr='#001b57', GradientType=1)!important;
+}
+/*  SOSHUB fancy styles end here    */
+
+.zoom
+{
+	position: absolute;
+	top: 149px;
+	right: 29px;
+	height: 85px;
+}
+.dropdown-toggle::before
+{
+	display: none !important;
+}
+
+.dropdown-toggle
+{
+	width: 160px;
+}
+.sos-text
+{
+	color: #0f2a65!important;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+	.sos-text_responsive {
+		font-size: 14px;
+	}
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+	.sos-text_responsive {
+		font-size: 12px;
+	}
+}
+.sos-border
+{
+	border: 1px solid #0f2a65!important;
+	border-color: #0f2a65!important;
+}
+.rounded-sos {
+	border-radius: 25px!important;
+}
+.sos-round_lg
+{
+	border-radius: 10px!important;
+}
+.sos-shadow
+{
+	box-shadow: inset 0 -2px 6px rgba(218,225,230,.2),0 0 0 1px rgba(90,101,112,.05),0 1px 2px   rgba(90,101,112,.22)!important;
+}
+.soshub-bg-light
+{
+	background-color: #fafafa!important;
+}
+.aps
+{
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1)!important;
+}
+
+/* starts Z-Index stack order style settings  */
+.z-1
+{
+	z-index: 199919991999!important;
+}
+.z-2
+{
+	z-index: 199199199!important;
+}
+.z-3
+{
+	z-index: 19191999!important;
+}
+.z-4
+{
+	z-index: 191919!important;
+}
+/* end Z-Index stack order  style settings */
+
+
